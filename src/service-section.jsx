@@ -38,7 +38,7 @@ const services = [
     icon: BarChartIcon,
   },
   {
-    title: "Corporate Finance",
+    title: "Fundraising & Investor Readiness",
     description:
       "In-depth financial reporting and analytics to drive data-informed business decisions.",
     icon: BarChartIcon,

@@ -9,6 +9,7 @@ import { Button } from "./components/ui/button";
 import { ChevronRight, Menu, X } from "lucide-react";
 import { DesktopNavigation } from "./DesktopNavigation";
 import Services from "./service-section";
+import { ServicesDemo } from "./service-section-2";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -200,7 +201,8 @@ function App() {
           </div>
         </section>
 
-        <Services />
+        {/* <Services /> */}
+        <ServicesDemo />
       </main>
     </div>
   );
