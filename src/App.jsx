@@ -179,6 +179,9 @@ function App() {
           </div>
         </section>
 
+        {/* <Services /> */}
+        <ServicesDemo />
+
         <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-center mb-8">
@@ -200,9 +203,6 @@ function App() {
             </div>
           </div>
         </section>
-
-        {/* <Services /> */}
-        <ServicesDemo />
       </main>
     </div>
   );

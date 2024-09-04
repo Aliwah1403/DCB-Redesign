@@ -1,68 +1,40 @@
 import { cn } from "@/lib/utils";
-import {
-  IconAdjustmentsBolt,
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
-  IconHeart,
-  IconHelp,
-  IconRouteAltLeft,
-  IconTerminal2,
-} from "@tabler/icons-react";
-import {
-  ChartPieIcon,
-  TrendingUpIcon,
-  ShieldCheckIcon,
-  BarChartIcon,
-} from "lucide-react";
+import { IconActivity } from "@tabler/icons-react";
+import { TrendingUpIcon, Target, Briefcase, Landmark } from "lucide-react";
 
 export function ServicesDemo() {
   const features = [
     {
       title: "Business Health Check",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <ChartPieIcon />,
+        "We carry out an extensive analysis of your company's finances, operations, and tax situation in order to find areas where risks can be reduced, workflows can be improved, and value can be added.",
+      icon: <IconActivity />,
     },
     {
       title: "Strategy",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <TrendingUpIcon />,
+        "If you already have a corporate strategy, we help you update and develop it. We also support the finance and operational strategies, making sure they are continuously reviewed and improved.",
+      icon: <Target />,
     },
     {
       title: "Fractional CFO Services",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <ShieldCheckIcon />,
+        "As a strategic finance partner, we assist businesses in achieving their full finance potential by implementing initiatives like internal investor readiness, financial health checks, and upskilling current teams and processes.",
+      icon: <Briefcase />,
     },
     {
       title: "Fundraising & Investor Readiness",
-      description: "We just cannot be taken down by anyone.",
-      icon: <BarChartIcon />,
-    },
-    {
-      title: "Fundraising & Investor Readiness",
-      description: "You can simply share passwords instead of buying new seats",
-      icon: <IconRouteAltLeft />,
-    },
-    {
-      title: "24/7 Customer Support",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
-      icon: <IconHelp />,
+        "We will utilize our networks to identify potential funders, assist in investor document development, support due diligence, and engage with funders until funding is secured.",
+      icon: <TrendingUpIcon />,
     },
     {
-      title: "Money back guarantee",
+      title: "Corporate Finance",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
-      icon: <IconAdjustmentsBolt />,
+        "We analyze your operations to optimize working capital utilization, analyze financial accounts and projections, and provide advice on the most suitable capital structure.",
+      icon: <Landmark />,
     },
-    {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
-      icon: <IconHeart />,
-    },
+   
   ];
   return (
     <>
