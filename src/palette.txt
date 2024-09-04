@@ -1,0 +1,35 @@
+/* Coolors Exported Palette - https://coolors.co/005857-1d7c7c-bdd5ea-f7f7ff-fe5f55 */
+
+- Tailwind
+
+{ 'caribbean_current': { DEFAULT: '#005857', 100: '#001111', 200: '#002322', 300: '#003433', 400: '#004544', 500: '#005857', 600: '#00aba9', 700: '#01fffb', 800: '#56fffc', 900: '#aafffe' }, 'teal': { DEFAULT: '#1D7C7C', 100: '#061919', 200: '#0c3232', 300: '#114a4a', 400: '#176363', 500: '#1d7c7c', 600: '#2bb6b6', 700: '#51d6d6', 800: '#8be4e4', 900: '#c5f1f1' }, 'columbia_blue': { DEFAULT: '#bdd5ea', 100: '#142c40', 200: '#295881', 300: '#3d83c1', 400: '#7dacd6', 500: '#bdd5ea', 600: '#cadeee', 700: '#d7e6f3', 800: '#e5eef7', 900: '#f2f7fb' }, 'ghost_white': { DEFAULT: '#f7f7ff', 100: '#000064', 200: '#0000c8', 300: '#2d2dff', 400: '#9191ff', 500: '#f7f7ff', 600: '#f7f7ff', 700: '#f9f9ff', 800: '#fbfbff', 900: '#fdfdff' }, 'bittersweet': { DEFAULT: '#fe5f55', 100: '#430500', 200: '#860a01', 300: '#c90e01', 400: '#fe1f0f', 500: '#fe5f55', 600: '#fe7e75', 700: '#fe9e97', 800: '#ffbfba', 900: '#ffdfdc' } }
+
+- CSV
+
+005857,1D7C7C,bdd5ea,f7f7ff,fe5f55
+
+- With #
+
+#005857, #1D7C7C, #bdd5ea, #f7f7ff, #fe5f55
+
+- Array
+
+["005857","1D7C7C","bdd5ea","f7f7ff","fe5f55"]
+
+- Object
+
+{"Caribbean Current":"005857","Teal":"1D7C7C","Columbia blue":"bdd5ea","Ghost white":"f7f7ff","Bittersweet":"fe5f55"}
+
+- Extended Array
+
+[{"name":"Caribbean Current","hex":"005857","rgb":[0,88,87],"cmyk":[100,0,1,65],"hsb":[179,100,35],"hsl":[179,100,17],"lab":[33,-22,-6]},{"name":"Teal","hex":"1D7C7C","rgb":[29,124,124],"cmyk":[77,0,0,51],"hsb":[180,77,49],"hsl":[180,62,30],"lab":[47,-26,-8]},{"name":"Columbia blue","hex":"bdd5ea","rgb":[189,213,234],"cmyk":[19,9,0,8],"hsb":[208,19,92],"hsl":[208,52,83],"lab":[84,-4,-13]},{"name":"Ghost white","hex":"f7f7ff","rgb":[247,247,255],"cmyk":[3,3,0,0],"hsb":[240,3,100],"hsl":[240,100,98],"lab":[97,1,-4]},{"name":"Bittersweet","hex":"fe5f55","rgb":[254,95,85],"cmyk":[0,63,67,0],"hsb":[4,67,100],"hsl":[4,99,66],"lab":[62,60,38]}]
+
+- XML
+
+<palette>
+  <color name="Caribbean Current" hex="005857" r="0" g="88" b="87" />
+  <color name="Teal" hex="1D7C7C" r="29" g="124" b="124" />
+  <color name="Columbia blue" hex="bdd5ea" r="189" g="213" b="234" />
+  <color name="Ghost white" hex="f7f7ff" r="247" g="247" b="255" />
+  <color name="Bittersweet" hex="fe5f55" r="254" g="95" b="85" />
+</palette>
