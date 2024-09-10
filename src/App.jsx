@@ -5,12 +5,14 @@ import logo2 from "./assets/logoipsum-285.svg";
 import logo3 from "./assets/logoipsum-317.svg";
 import logo4 from "./assets/logoipsum-325.svg";
 import logo5 from "./assets/logoipsum-330.svg";
+import icon from "./assets/logo-icon.svg";
 import { Button } from "./components/ui/button";
 import { ChevronRight, Menu, X } from "lucide-react";
 import { DesktopNavigation } from "./DesktopNavigation";
 import Services from "./service-section";
 import { ServicesDemo } from "./service-section-2";
 import ContactPage from "./contact";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -204,6 +206,150 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* CTA Section */}
+        <section className="bg-gradient-to-r from-[#005857] to-[#00857e] py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">
+              Ready to Transform your financial strategy?
+            </h2>
+            <div className="mt-8">
+              <Button className="bg-white text-[#005857] hover:bg-gray-100">
+                Schedule free consultation
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="bg-white text-gray-600 py-12 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+              <div className="col-span-1 md:col-span-2">
+                <img
+                  src={icon}
+                  alt="Company Logo"
+                  className="h-8 w-auto mb-4"
+                />
+                <p className="text-sm">
+                  We're growing up your business with personal AI manager.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold mb-4">Company</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <a href="#" className="hover:text-gray-900">
+                      About us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-gray-900">
+                      Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-gray-900">
+                      Team
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold mb-4">Resources</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <a href="#" className="hover:text-gray-900">
+                      Articles
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-gray-900">
+                      News and PR
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-gray-900">
+                      FAQs
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-8 pt-8 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center">
+              <p className="text-sm">
+                &copy; 2024 DCB Consulting LLP. All rights reserved.
+              </p>
+              <div className="flex space-x-4 mt-4 sm:mt-0">
+                {/* <a href="#" className="text-gray-400 hover:text-gray-500">
+                  <span className="sr-only">Facebook</span>
+                  <Facebook className="h-6 w-6" />
+                </a>
+                <a href="#" className="text-gray-400 hover:text-gray-500">
+                  <span className="sr-only">Instagram</span>
+                  <Instagram className="h-6 w-6" />
+                </a> */}
+                <a href="#" className="text-gray-400 hover:text-gray-500">
+                  <span className="sr-only">LinkedIn</span>
+                  <Linkedin className="h-6 w-6" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        {/* <footer className="bg-white text-gray-600 py-8 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col items-center mb-8">
+              <img
+                src={logo5}
+                alt="DCB Consulting"
+                className="h-8 w-auto mb-6"
+              />
+              <nav className="flex flex-wrap justify-center gap-6">
+                <a href="#" className="hover:text-gray-900">
+                  Overview
+                </a>
+                <a href="#" className="hover:text-gray-900">
+                  Features
+                </a>
+                <a href="#" className="hover:text-gray-900">
+                  Pricing
+                </a>
+                <a href="#" className="hover:text-gray-900">
+                  Careers
+                </a>
+                <a href="#" className="hover:text-gray-900">
+                  Help
+                </a>
+                <a href="#" className="hover:text-gray-900">
+                  Privacy
+                </a>
+              </nav>
+            </div>
+            <div className="border-t border-gray-200 pt-8">
+              <div className="flex flex-col sm:flex-row justify-between items-center">
+                <p className="text-sm mb-4 sm:mb-0">
+                  © 2024 DCB Consulting LLP. All rights reserved.
+                </p>
+                <div className="flex space-x-4">
+                  <a href="#" className="text-gray-400 hover:text-gray-500">
+                    <span className="sr-only">Facebook</span>
+                    <Facebook className="h-6 w-6" />
+                  </a>
+                  <a href="#" className="text-gray-400 hover:text-gray-500">
+                    <span className="sr-only">Instagram</span>
+                    <Instagram className="h-6 w-6" />
+                  </a>
+                  <a href="#" className="text-gray-400 hover:text-gray-500">
+                    <span className="sr-only">LinkedIn</span>
+                    <Linkedin className="h-6 w-6" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer> */}
       </main>
     </div>
   );
