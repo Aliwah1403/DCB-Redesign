@@ -207,7 +207,7 @@ function App() {
           </div>
         </section>
 
-        {/* CTA Section */}
+        {/* CTA Section 1*/}
         <section className="bg-gradient-to-r from-[#005857] to-[#00857e] py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
@@ -221,8 +221,8 @@ function App() {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="bg-white text-gray-600 py-12 px-4 sm:px-6 lg:px-8">
+        {/* Footer 1*/}
+        {/* <footer className="bg-white text-gray-600 py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="col-span-1 md:col-span-2">
@@ -281,14 +281,6 @@ function App() {
                 &copy; 2024 DCB Consulting LLP. All rights reserved.
               </p>
               <div className="flex space-x-4 mt-4 sm:mt-0">
-                {/* <a href="#" className="text-gray-400 hover:text-gray-500">
-                  <span className="sr-only">Facebook</span>
-                  <Facebook className="h-6 w-6" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-gray-500">
-                  <span className="sr-only">Instagram</span>
-                  <Instagram className="h-6 w-6" />
-                </a> */}
                 <a href="#" className="text-gray-400 hover:text-gray-500">
                   <span className="sr-only">LinkedIn</span>
                   <Linkedin className="h-6 w-6" />
@@ -296,9 +288,10 @@ function App() {
               </div>
             </div>
           </div>
-        </footer>
+        </footer> */}
 
-        {/* <footer className="bg-white text-gray-600 py-8 px-4 sm:px-6 lg:px-8">
+        {/* Footer 2 */}
+        <footer className="bg-white text-gray-600 py-8 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col items-center mb-8">
               <img
@@ -334,14 +327,6 @@ function App() {
                 </p>
                 <div className="flex space-x-4">
                   <a href="#" className="text-gray-400 hover:text-gray-500">
-                    <span className="sr-only">Facebook</span>
-                    <Facebook className="h-6 w-6" />
-                  </a>
-                  <a href="#" className="text-gray-400 hover:text-gray-500">
-                    <span className="sr-only">Instagram</span>
-                    <Instagram className="h-6 w-6" />
-                  </a>
-                  <a href="#" className="text-gray-400 hover:text-gray-500">
                     <span className="sr-only">LinkedIn</span>
                     <Linkedin className="h-6 w-6" />
                   </a>
@@ -349,7 +334,7 @@ function App() {
               </div>
             </div>
           </div>
-        </footer> */}
+        </footer>
       </main>
     </div>
   );
