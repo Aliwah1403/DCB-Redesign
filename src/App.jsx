@@ -10,6 +10,7 @@ import { ChevronRight, Menu, X } from "lucide-react";
 import { DesktopNavigation } from "./DesktopNavigation";
 import Services from "./service-section";
 import { ServicesDemo } from "./service-section-2";
+import ContactPage from "./contact";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
