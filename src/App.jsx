@@ -13,6 +13,7 @@ import Services from "./service-section";
 import { ServicesDemo } from "./service-section-2";
 import ContactPage from "./contact";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import AboutSection from "./about-us-section";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -181,6 +182,9 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* About Us Section */}
+        <AboutSection />
 
         {/* <Services /> */}
         <ServicesDemo />
