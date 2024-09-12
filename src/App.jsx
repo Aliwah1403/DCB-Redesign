@@ -14,6 +14,7 @@ import { ServicesDemo } from "./service-section-2";
 import ContactPage from "./contact";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import AboutSection from "./about-us-section";
+import TeamSection from "./team-section";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -188,6 +189,9 @@ function App() {
 
         {/* <Services /> */}
         <ServicesDemo />
+
+        {/* Team Section */}
+        <TeamSection />
 
         <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
