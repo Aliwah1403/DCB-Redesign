@@ -43,7 +43,7 @@ const TeamSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {teamMembers.map((member, index) => (
             <div key={index} className="flex flex-col items-center">
-              <div className="w-full aspect-[3/4] mb-6 overflow-hidden rounded-lg">
+              <div className="w-full aspect-[4/3] mb-6 overflow-hidden rounded-lg">
                 <img
                   src={member.imageSrc}
                   alt={member.name}
