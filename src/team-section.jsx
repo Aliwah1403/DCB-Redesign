@@ -216,7 +216,7 @@ const TeamSection = () => {
         )}
       </AnimatePresence>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h3 className="text-sm font-semibold text-[#005857] uppercase tracking-wide mb-2">
