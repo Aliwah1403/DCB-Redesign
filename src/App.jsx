@@ -191,12 +191,7 @@ function App() {
         {/* <Services /> */}
         <ServicesDemo />
 
-        {/* Team Section */}
-        <TeamSection />
-
-        {/* Recent News */}
-        <RecentNews />
-
+        {/* Clients section */}
         <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-center mb-8">
@@ -218,6 +213,12 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* Team Section */}
+        <TeamSection />
+
+        {/* Recent News */}
+        <RecentNews />
 
         {/* CTA Section 1*/}
         <section className="bg-gradient-to-r from-[#005857] to-[#00857e] py-16 px-4 sm:px-6 lg:px-8">

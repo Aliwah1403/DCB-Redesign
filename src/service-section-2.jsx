@@ -34,27 +34,28 @@ export function ServicesDemo() {
         "We analyze your operations to optimize working capital utilization, analyze financial accounts and projections, and provide advice on the most suitable capital structure.",
       icon: <Landmark />,
     },
-   
   ];
   return (
     <>
-      <div className="text-center py-16">
-        <h3 className="text-sm font-semibold text-[#005857] uppercase tracking-wide mb-2">
-          Services
-        </h3>
-        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">
-          Financial Management Services
-        </h2>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Transforming business finance: Visionary strategies, world-class tools
-          and unwavering support for enterpreneural success
-        </p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10  max-w-7xl mx-auto">
-        {features.map((feature, index) => (
-          <Feature key={feature.title} {...feature} index={index} />
-        ))}
-      </div>
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h3 className="text-sm font-semibold text-[#005857] uppercase tracking-wide mb-2">
+            Services
+          </h3>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">
+            Financial Management Services
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Transforming business finance: Visionary strategies, world-class
+            tools and unwavering support for enterpreneural success.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10  max-w-7xl mx-auto">
+          {features.map((feature, index) => (
+            <Feature key={feature.title} {...feature} index={index} />
+          ))}
+        </div>
+      </section>
     </>
   );
 }
