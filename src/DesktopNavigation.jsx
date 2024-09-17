@@ -1,5 +1,3 @@
-"use client";
-
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import viteLogo from "/vite.svg";
@@ -17,7 +15,7 @@ import {
 
 const components = [
   {
-    title: "Articles",
+    title: "Blogs",
     href: "/docs/primitives/alert-dialog",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
@@ -55,8 +53,21 @@ const components = [
 
 export function DesktopNavigation({ isScrolled }) {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="hidden md:flex">
       <NavigationMenuList>
+        <NavigationMenuItem>
+          <a href="/docs">
+            <NavigationMenuLink
+              className={cn(
+                navigationMenuTriggerStyle(),
+                isScrolled ? "text-gray-900" : "text-white",
+                "nav-trigger"
+              )}
+            >
+              Home
+            </NavigationMenuLink>
+          </a>
+        </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger
             className={cn(
@@ -64,7 +75,7 @@ export function DesktopNavigation({ isScrolled }) {
               "nav-trigger"
             )}
           >
-            About us{" "}
+            Company{" "}
           </NavigationMenuTrigger>{" "}
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -76,9 +87,7 @@ export function DesktopNavigation({ isScrolled }) {
                   >
                     {/* <Icons.logo className="h-6 w-6" /> */}
                     <img src={dummyIcon} className="size-6" />
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
-                    </div>
+                    <div className="mb-2 mt-4 text-lg font-medium">DCB LLP</div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       Beautifully designed components built with Radix UI and
                       Tailwind CSS.
@@ -86,7 +95,7 @@ export function DesktopNavigation({ isScrolled }) {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Company">
+              <ListItem href="/docs" title="About us">
                 Re-usable components built using Radix UI and Tailwind CSS.
               </ListItem>
               <ListItem href="/docs/installation" title="Services">
@@ -98,7 +107,7 @@ export function DesktopNavigation({ isScrolled }) {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger
             className={cn(
               isScrolled ? "text-gray-900" : "text-white",
@@ -115,12 +124,12 @@ export function DesktopNavigation({ isScrolled }) {
                   title={component.title}
                   href={component.href}
                 >
-                  {/* {component.description} */}
+                  {component.description}
                 </ListItem>
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
         <NavigationMenuItem>
           <a href="/docs">
             <NavigationMenuLink
@@ -130,7 +139,7 @@ export function DesktopNavigation({ isScrolled }) {
                 "nav-trigger"
               )}
             >
-              Documentation
+              Articles
             </NavigationMenuLink>
           </a>
         </NavigationMenuItem>
