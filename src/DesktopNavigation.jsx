@@ -37,24 +37,12 @@ const components = [
     href: "/docs/primitives/scroll-area",
     description: "Visually or semantically separates content.",
   },
-  // {
-  //   title: "Tabs",
-  //   href: "/docs/primitives/tabs",
-  //   description:
-  //     "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  // },
-  // {
-  //   title: "Tooltip",
-  //   href: "/docs/primitives/tooltip",
-  //   description:
-  //     "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  // },
 ];
 
 export function DesktopNavigation({ isScrolled }) {
   return (
     <NavigationMenu className="hidden md:flex">
-      <NavigationMenuList>
+      <NavigationMenuList className="gap-1">
         <NavigationMenuItem>
           <a href="/docs">
             <NavigationMenuLink
@@ -85,7 +73,6 @@ export function DesktopNavigation({ isScrolled }) {
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-                    {/* <Icons.logo className="h-6 w-6" /> */}
                     <img src={dummyIcon} className="size-6" />
                     <div className="mb-2 mt-4 text-lg font-medium">DCB LLP</div>
                     <p className="text-sm leading-tight text-muted-foreground">
@@ -107,7 +94,7 @@ export function DesktopNavigation({ isScrolled }) {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        {/* <NavigationMenuItem>
+        <NavigationMenuItem>
           <NavigationMenuTrigger
             className={cn(
               isScrolled ? "text-gray-900" : "text-white",
@@ -123,26 +110,12 @@ export function DesktopNavigation({ isScrolled }) {
                   key={component.title}
                   title={component.title}
                   href={component.href}
-                >
-                  {component.description}
-                </ListItem>
+                ></ListItem>
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem> */}
-        <NavigationMenuItem>
-          <a href="/docs">
-            <NavigationMenuLink
-              className={cn(
-                navigationMenuTriggerStyle(),
-                isScrolled ? "text-gray-900" : "text-white",
-                "nav-trigger"
-              )}
-            >
-              Articles
-            </NavigationMenuLink>
-          </a>
         </NavigationMenuItem>
+
         <NavigationMenuItem className="border border-input rounded-md ">
           <a href="/docs">
             <NavigationMenuLink
