@@ -76,8 +76,7 @@ export function DesktopNavigation({ isScrolled }) {
                     <img src={dummyIcon} className="size-6" />
                     <div className="mb-2 mt-4 text-lg font-medium">DCB LLP</div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and
-                      Tailwind CSS.
+                      Elevate your business potential with premium CFO services.
                     </p>
                   </a>
                 </NavigationMenuLink>
