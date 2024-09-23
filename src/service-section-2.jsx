@@ -37,7 +37,7 @@ export function ServicesDemo() {
   ];
   return (
     <>
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-16 px-4 sm:px-6 lg:px-8" id="services">
         <div className="text-center mb-16">
           <h3 className="text-sm font-semibold text-[#005857] uppercase tracking-wide mb-2">
             Services

@@ -81,14 +81,17 @@ export function DesktopNavigation({ isScrolled }) {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="About us">
-                Re-usable components built using Radix UI and Tailwind CSS.
+              <ListItem href="/about-us" title="About us">
+                DCB LLP: A Kenyan finance consultancy with 35+ years of
+                expertise.
               </ListItem>
-              <ListItem href="/docs/installation" title="Services">
-                How to install dependencies and structure your app.
+              <ListItem href="#services" title="Services">
+                Strategic CFO services. Financial planning, risk management,
+                fundraising, and operational optimization.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Our team">
-                Styles for headings, paragraphs, lists...etc
+              <ListItem href="#our-team" title="Our team">
+                Experienced financial experts. Local insights meet global
+                practices.
               </ListItem>
             </ul>
           </NavigationMenuContent>
