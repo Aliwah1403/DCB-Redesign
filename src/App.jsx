@@ -324,23 +324,41 @@ function App() {
                 className="h-8 w-auto mb-6"
               />
               <nav className="flex flex-wrap justify-center gap-6">
-                <a href="#" className="hover:text-gray-900">
-                  Overview
+                <a
+                  href="#"
+                  className="hover:text-[#005857] hover:font-semibold"
+                >
+                  Home
                 </a>
-                <a href="#" className="hover:text-gray-900">
-                  Features
+                <a
+                  href="#"
+                  className="hover:text-[#005857] hover:font-semibold"
+                >
+                  About
                 </a>
-                <a href="#" className="hover:text-gray-900">
-                  Pricing
+                <a
+                  href="#"
+                  className="hover:text-[#005857] hover:font-semibold"
+                >
+                  Services
                 </a>
-                <a href="#" className="hover:text-gray-900">
-                  Careers
+                <a
+                  href="#"
+                  className="hover:text-[#005857] hover:font-semibold"
+                >
+                  Team
                 </a>
-                <a href="#" className="hover:text-gray-900">
-                  Help
+                <a
+                  href="#"
+                  className="hover:text-[#005857] hover:font-semibold"
+                >
+                  Articles
                 </a>
-                <a href="#" className="hover:text-gray-900">
-                  Privacy
+                <a
+                  href="#"
+                  className="hover:text-[#005857] hover:font-semibold"
+                >
+                  Contact
                 </a>
               </nav>
             </div>
@@ -350,7 +368,11 @@ function App() {
                   © 2024 DCB Consulting LLP. All rights reserved.
                 </p>
                 <div className="flex space-x-4">
-                  <a href="#" className="text-gray-400 hover:text-gray-500">
+                  <a
+                    href="https://www.linkedin.com/company/dcb-consulting-llp/"
+                    target="_blank"
+                    className="text-gray-400 hover:text-[#005857] hover:font-semibold"
+                  >
                     <span className="sr-only">LinkedIn</span>
                     <Linkedin className="h-6 w-6" />
                   </a>
