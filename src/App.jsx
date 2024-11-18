@@ -246,7 +246,7 @@ function App() {
         </section>
 
         {/* Footer 1*/}
-        {/* <footer className="bg-white text-gray-600 py-12 px-4 sm:px-6 lg:px-8">
+        <footer className="bg-white text-gray-600 py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="col-span-1 md:col-span-2">
@@ -312,10 +312,10 @@ function App() {
               </div>
             </div>
           </div>
-        </footer> */}
+        </footer>
 
         {/* Footer 2 */}
-        <footer className="bg-white text-gray-600 py-8 px-4 sm:px-6 lg:px-8">
+        {/* <footer className="bg-white text-gray-600 py-8 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col items-center mb-8">
               <img
@@ -380,7 +380,7 @@ function App() {
               </div>
             </div>
           </div>
-        </footer>
+        </footer> */}
       </main>
     </div>
   );
