@@ -4,6 +4,7 @@ import newsPhoto from "./assets/blog1.jpg";
 import news2 from "./assets/blog2.jpg";
 import news3 from "./assets/blog3.jpg";
 import { format } from "date-fns";
+import { Button } from "@/components/ui/button";
 
 const news = [
   {
@@ -85,6 +86,10 @@ const RecentNews = () => {
             </div>
           ))}
         </div>
+
+        {/* <div className="flex items-center justify-center mt-5">
+          <Button className="bg-[#005857] hover:bg-[#007F7C]">View More</Button>
+        </div> */}
       </div>
     </section>
   );
