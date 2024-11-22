@@ -16,6 +16,7 @@ import { Facebook, Instagram, Linkedin } from "lucide-react";
 import AboutSection from "./about-us-section";
 import TeamSection from "./team-section";
 import RecentNews from "./recent-news-section";
+import StatsSection from "./stats-section";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -196,6 +197,9 @@ function App() {
 
         {/* <Services /> */}
         <ServicesDemo />
+
+        {/* stats section */}
+        <StatsSection />
 
         {/* Clients section */}
         <section className="py-12 bg-gray-50">
