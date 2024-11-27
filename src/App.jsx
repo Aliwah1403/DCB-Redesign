@@ -201,6 +201,9 @@ function App() {
         {/* stats section */}
         <StatsSection />
 
+        {/* Team Section */}
+        <TeamSection />
+
         {/* Clients section */}
         <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -223,9 +226,6 @@ function App() {
             </div>
           </div>
         </section>
-
-        {/* Team Section */}
-        <TeamSection />
 
         {/* Recent News */}
         <RecentNews />

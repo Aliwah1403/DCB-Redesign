@@ -19,21 +19,7 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-            variants={MULTIDIRECTION_SLIDE_VARIANTS}
-            transition={{ duration: 1 }}
-            className="aspect-w-4 aspect-h-3"
-          >
-            <img
-              src={aboutImg}
-              alt="About DCB LLP"
-              className="w-full h-full object-cover rounded-lg"
-            />
-          </motion.div>
-
-          <motion.div
-            initial="right"
+            initial="left"
             animate={isInView ? "visible" : "right"}
             variants={MULTIDIRECTION_SLIDE_VARIANTS}
             transition={{ duration: 1 }}
@@ -61,6 +47,20 @@ const AboutSection = () => {
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </div>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            variants={MULTIDIRECTION_SLIDE_VARIANTS}
+            transition={{ duration: 1 }}
+            className="aspect-w-4 aspect-h-3"
+          >
+            <img
+              src={aboutImg}
+              alt="About DCB LLP"
+              className="w-full h-full object-cover rounded-lg"
+            />
           </motion.div>
         </div>
       </div>
