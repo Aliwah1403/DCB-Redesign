@@ -20,23 +20,23 @@ const components = [
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
-  {
-    title: "Events",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
+  // {
+  //   title: "Events",
+  //   href: "/docs/primitives/hover-card",
+  //   description:
+  //     "For sighted users to preview content available behind a link.",
+  // },
   {
     title: "News and PR",
     href: "/docs/primitives/progress",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
-  {
-    title: "FAQs",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
+  // {
+  //   title: "FAQs",
+  //   href: "/docs/primitives/scroll-area",
+  //   description: "Visually or semantically separates content.",
+  // },
 ];
 
 export function DesktopNavigation({ isScrolled }) {
@@ -119,6 +119,7 @@ export function DesktopNavigation({ isScrolled }) {
         </NavigationMenuItem>
 
         <NavigationMenuItem className="border border-input rounded-md ">
+{/* 
           <a href="/docs">
             <NavigationMenuLink
               className={cn(
@@ -129,7 +130,8 @@ export function DesktopNavigation({ isScrolled }) {
             >
               Contact us
             </NavigationMenuLink>
-          </a>
+          </a> */}
+
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

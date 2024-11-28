@@ -47,67 +47,21 @@ function App() {
             <div className="flex items-center">
               <a href="/" className="flex items-center">
                 <img src={logo5} alt="FinConsult Logo" />
-                {/* <span
-                  className={`ml-2 text-xl font-bold ${
-                    scrollPosition > 50 ? "text-gray-900" : "text-white"
-                  }`}
-                >
-                  DCB Consulting
-                </span> */}
               </a>
             </div>
 
-            {/* <nav className="hidden md:flex space-x-8">
-              <a
-                href="#"
-                className={`${
-                  scrollPosition > 50
-                    ? "text-gray-600 hover:text-gray-900"
-                    : "text-white hover:text-gray-200"
-                }`}
-              >
-                Services
-              </a>
-              <a
-                href="#"
-                className={`${
-                  scrollPosition > 50
-                    ? "text-gray-600 hover:text-gray-900"
-                    : "text-white hover:text-gray-200"
-                }`}
-              >
-                About
-              </a>
-              <a
-                href="#"
-                className={`${
-                  scrollPosition > 50
-                    ? "text-gray-600 hover:text-gray-900"
-                    : "text-white hover:text-gray-200"
-                }`}
-              >
-                Case Studies
-              </a>
-              <a
-                href="#"
-                className={`${
-                  scrollPosition > 50
-                    ? "text-gray-600 hover:text-gray-900"
-                    : "text-white hover:text-gray-200"
-                }`}
-              >
-                Contact
-              </a>
-            </nav> */}
             <DesktopNavigation isScrolled={isScrolled} />
-            {/* 
-            <div className="hidden md:block">
-              <Button
-                variant={scrollPosition > 50 ? "outline" : "secondary"}
-              >
-                Get in Touch
-              </Button>
-            </div> */}
+
+            <Button
+              variant="ghost"
+              className={`${scrollPosition > 50 ? "text-black" : "text-white"}`}
+            >
+              Get in touch
+            </Button>
+            {/* <Button className="bg-[#009793] hover:bg-[#009793]/90">
+              Get in touch
+            </Button> */}
+
             <div className="md:hidden">
               <Button
                 variant="ghost"
@@ -125,6 +79,7 @@ function App() {
         </div>
       </header>
 
+      {/* Mobile menu nav */}
       {isMenuOpen && (
         <div className="md:hidden fixed inset-0 z-40 bg-white">
           <div className="pt-20 pb-3 px-2 space-y-1">
