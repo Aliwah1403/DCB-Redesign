@@ -1,6 +1,6 @@
 import React from "react";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
-import icon from "./assets/logo-icon.svg";
+import icon from "@/assets/logo-icon.svg";
 
 const FooterDesign1 = () => {
   return (

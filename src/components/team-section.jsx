@@ -2,8 +2,8 @@ import { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { Phone, Mail, Linkedin, X } from "lucide-react";
-import chrisImage from "./assets/Chris.jpg";
-import denisImage from "./assets/Denis.jpg";
+import chrisImage from "@/assets/Chris.jpg";
+import denisImage from "@/assets/Denis.jpg";
 
 const teamMembers = [
   {

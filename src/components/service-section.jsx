@@ -10,7 +10,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "./components/ui/card";
+} from "./ui/card";
 
 const services = [
   {

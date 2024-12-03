@@ -8,17 +8,16 @@ import logo5 from "@/assets/logoipsum-330.svg";
 
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Menu, X } from "lucide-react";
-import { DesktopNavigation } from "@/DesktopNavigation";
+import { DesktopNavigation } from "@/components/DesktopNavigation";
 // import { DesktopNavigation } from "./DesktopNavigation";
-import Services from "@/service-section";
-import { ServicesDemo } from "@/service-section-2";
-import ContactPage from "@/contact";
+import Services from "@/components/service-section";
+import { ServicesDemo } from "@/components/service-section-2";
 
-import AboutSection from "@/about-us-section";
-import TeamSection from "@/team-section";
-import RecentNews from "@/recent-news-section";
-import StatsSection from "@/stats-section";
-import FooterDesign1 from "@/footer-design-1";
+import AboutSection from "@/components/about-us-section";
+import TeamSection from "@/components/team-section";
+import RecentNews from "@/components/recent-news-section";
+import StatsSection from "@/components/stats-section";
+import FooterDesign1 from "@/components/footer-design-1";
 const Homepage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
