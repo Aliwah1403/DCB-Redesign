@@ -1,8 +1,8 @@
-import chrisImage from "./assets/Chris.jpg";
-import denisImage from "./assets/Denis.jpg";
-import newsPhoto from "./assets/blog1.jpg";
-import news2 from "./assets/blog2.jpg";
-import news3 from "./assets/blog3.jpg";
+import chrisImage from "@/assets/Chris.jpg";
+import denisImage from "@/assets/Denis.jpg";
+import newsPhoto from "@/assets/blog1.jpg";
+import news2 from "@/assets/blog2.jpg";
+import news3 from "@/assets/blog3.jpg";
 import { format } from "date-fns";
 import { Button } from "@/components/ui/button";
 
