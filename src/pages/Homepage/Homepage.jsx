@@ -67,9 +67,13 @@ const Homepage = () => {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
                 {isMenuOpen ? (
-                  <X className="size-6" />
+                  <X className="size-7 stroke-[1.5]" />
                 ) : (
-                  <Menu className="size-8" />
+                  <Menu
+                    className={`${
+                      scrollPosition > 50 ? "stroke-black" : "stroke-white"
+                    } size-8 stroke-[1.5]`}
+                  />
                 )}
               </Button>
             </div>
