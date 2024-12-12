@@ -53,13 +53,12 @@ const Homepage = () => {
 
             <Button
               variant="ghost"
-              className={`${scrollPosition > 50 ? "text-black" : "text-white"}`}
+              className={`${
+                scrollPosition > 50 ? "text-black" : "text-white"
+              } hidden md:block`}
             >
               Get in touch
             </Button>
-            {/* <Button className="bg-[#009793] hover:bg-[#009793]/90">
-              Get in touch
-            </Button> */}
 
             <div className="md:hidden">
               <Button
@@ -68,9 +67,13 @@ const Homepage = () => {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
                 {isMenuOpen ? (
-                  <X className="size-6" />
+                  <X className="size-7 stroke-[1.5]" />
                 ) : (
-                  <Menu className="size-8" />
+                  <Menu
+                    className={`${
+                      scrollPosition > 50 ? "stroke-black" : "stroke-white"
+                    } size-8 stroke-[1.5]`}
+                  />
                 )}
               </Button>
             </div>

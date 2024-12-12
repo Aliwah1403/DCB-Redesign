@@ -118,8 +118,7 @@ export function DesktopNavigation({ isScrolled }) {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        <NavigationMenuItem className="border border-input rounded-md ">
-{/* 
+        {/* <NavigationMenuItem className="border border-input rounded-md ">
           <a href="/docs">
             <NavigationMenuLink
               className={cn(
@@ -130,9 +129,9 @@ export function DesktopNavigation({ isScrolled }) {
             >
               Contact us
             </NavigationMenuLink>
-          </a> */}
+          </a>
+        </NavigationMenuItem> */}
 
-        </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
   );
