@@ -239,7 +239,7 @@ const SingleBlog = () => {
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
-                  <BreadcrumbLink href="/components">Articles</BreadcrumbLink>
+                  <BreadcrumbLink href="/blogs">Articles</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
