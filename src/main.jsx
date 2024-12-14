@@ -16,6 +16,7 @@ import Homepage from "./pages/Homepage/Homepage.jsx";
 import About from "./pages/About page/About.jsx";
 import ContactUs from "./pages/Contact page/ContactUs.jsx";
 import Blogs from "./pages/Blogs page/Blogs.jsx";
+import SingleBlog from "./pages/Blogs page/SingleBlog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/blogs",
         element: <Blogs />,
+      },
+      {
+        path: "/blogs/single-blog",
+        element: <SingleBlog />,
       },
     ],
   },
