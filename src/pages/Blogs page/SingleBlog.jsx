@@ -13,7 +13,14 @@ import {
   Facebook,
   Link2,
 } from "lucide-react";
-import RecentNews from "@/components/recent-news-section";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 import chrisImage from "@/assets/Chris.jpg";
 import denisImage from "@/assets/Denis.jpg";
 import newsPhoto from "@/assets/blog1.jpg";
@@ -224,15 +231,22 @@ const SingleBlog = () => {
         {/* content section */}
         <section className="py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
-            <div className="flex items-center gap-2 text-sm text-gray-600 mb-8">
-              <a href="/blog" className="hover:text-gray-900">
-                Blog
-              </a>
-              <span>›</span>
-              <a href="#" className="hover:text-gray-900">
-                {blogPost.category}
-              </a>
-            </div>
+            {/* Breadcrumb */}
+            <Breadcrumb className="mb-8">
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/">Home</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/components">Articles</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage>{blogPost.title}</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
 
             <article className="prose prose-lg max-w-none">
               <h2 className="text-3xl font-bold mb-6">Introduction</h2>
