@@ -9,7 +9,11 @@ const About = () => {
   return (
     <>
       {/* Hero Section with Photo Background */}
-      <PagesHeader />
+      <PagesHeader
+        title="Your Financial Future"
+        image="https://dcbconsulting.co.ke/assets/hero1.jpeg"
+        description="Guiding businesses towards financial clarity and strategic growth through expert consultancy and tailored solutions"
+      />
 
       {/* Stats section */}
       <JourneyStats />
