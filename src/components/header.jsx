@@ -3,6 +3,7 @@ import logo5 from "@/assets/logoipsum-330.svg";
 import { Button } from "@/components/ui/button";
 import { DesktopNavigation } from "@/components/DesktopNavigation";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,14 +36,16 @@ const Header = () => {
 
             <DesktopNavigation isScrolled={isScrolled} />
 
-            <Button
-              variant="ghost"
-              className={`${
-                scrollPosition > 50 ? "text-black" : "text-white"
-              } hidden md:block`}
-            >
-              Get in touch
-            </Button>
+            <Link to="/contact-us">
+              <Button
+                variant="ghost"
+                className={`${
+                  scrollPosition > 50 ? "text-black" : "text-white"
+                } hidden md:block`}
+              >
+                Get in touch
+              </Button>
+            </Link>
 
             <div className="md:hidden">
               <Button
@@ -70,7 +73,7 @@ const Header = () => {
         <div className="md:hidden fixed inset-0 z-40 bg-white">
           <div className="pt-20 pb-3 px-2 space-y-1">
             <a
-              href="#"
+              href="/about"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
             >
               About
@@ -88,16 +91,18 @@ const Header = () => {
               Team
             </a>
             <a
-              href="#"
+              href="/articles"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
             >
               Articles
             </a>
 
             <div className="px-3 py-2">
-              <Button className="w-full bg-[#005857] hover:bg-[#005857]/90">
-                Get in Touch
-              </Button>
+              <Link to="/contact-us">
+                <Button className="w-full bg-[#005857] hover:bg-[#005857]/90">
+                  Get in Touch
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

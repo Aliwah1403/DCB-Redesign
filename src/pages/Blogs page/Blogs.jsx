@@ -8,7 +8,7 @@ const posts = [
     id: 1,
     imageUrl: newsPhoto,
     title: "Time hospitals in Africa raised capital through stock market",
-    href: "/blogs/single-blog",
+    href: "/articles/single-article",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
     date: "May 23, 2024",

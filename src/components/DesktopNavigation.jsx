@@ -16,7 +16,7 @@ import {
 const components = [
   {
     title: "Blogs",
-    href: "/docs/primitives/alert-dialog",
+    href: "/articles",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
@@ -28,7 +28,7 @@ const components = [
   // },
   {
     title: "News and PR",
-    href: "/docs/primitives/progress",
+    href: "/articles",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
@@ -44,7 +44,7 @@ export function DesktopNavigation({ isScrolled }) {
     <NavigationMenu className="hidden md:flex">
       <NavigationMenuList className="gap-1">
         <NavigationMenuItem>
-          <a href="/docs">
+          <a href="/">
             <NavigationMenuLink
               className={cn(
                 navigationMenuTriggerStyle(),
@@ -81,7 +81,7 @@ export function DesktopNavigation({ isScrolled }) {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/about-us" title="About us">
+              <ListItem href="/about" title="About us">
                 DCB LLP: A Kenyan finance consultancy with 35+ years of
                 expertise.
               </ListItem>
@@ -117,21 +117,6 @@ export function DesktopNavigation({ isScrolled }) {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-
-        {/* <NavigationMenuItem className="border border-input rounded-md ">
-          <a href="/docs">
-            <NavigationMenuLink
-              className={cn(
-                navigationMenuTriggerStyle(),
-                isScrolled ? "text-gray-900" : "text-white",
-                "nav-trigger"
-              )}
-            >
-              Contact us
-            </NavigationMenuLink>
-          </a>
-        </NavigationMenuItem> */}
-
       </NavigationMenuList>
     </NavigationMenu>
   );
