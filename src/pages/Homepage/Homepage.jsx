@@ -1,10 +1,6 @@
 import { useState, useEffect } from "react";
 // import reactLogo from "./assets/react.svg";
-import logo1 from "@/assets/logoipsum-265.svg";
-import logo2 from "@/assets/logoipsum-285.svg";
-import logo3 from "@/assets/logoipsum-317.svg";
-import logo4 from "@/assets/logoipsum-325.svg";
-import logo5 from "@/assets/logoipsum-330.svg";
+
 
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
@@ -18,8 +14,8 @@ import StatsSection from "@/components/stats-section";
 import FooterDesign1 from "@/components/footer-design-1";
 import Header from "@/components/header";
 import HeroSection from "./HeroSection";
+import ClientsSlider from "@/components/clients-slider";
 const Homepage = () => {
-  const clientLogos = [logo1, logo2, logo3, logo4, logo5];
   return (
     <main className="flex-grow">
       {/* Landing page hero section */}
@@ -38,27 +34,7 @@ const Homepage = () => {
       <TeamSection />
 
       {/* Clients section */}
-      <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-center mb-8">
-            Our Esteemed Clients{" "}
-          </h2>
-          <div className="flex overflow-hidden space-x-16 group">
-            <div className="flex space-x-16 animate-loop-scroll group-hover:paused">
-              {clientLogos.concat(clientLogos).map((logo, index) => (
-                <img
-                  key={index}
-                  src={logo}
-                  alt={`Client logo ${index + 1}`}
-                  width={160}
-                  height={80}
-                  className="max-w-none"
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <ClientsSlider />
 
       {/* Recent News */}
       <RecentNews />
