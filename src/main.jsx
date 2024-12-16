@@ -12,6 +12,7 @@ import {
   useLocation,
   useNavigation,
 } from "react-router-dom";
+import RootLayout from "./layouts/RootLayout.jsx";
 import Homepage from "./pages/Homepage/Homepage.jsx";
 import About from "./pages/About page/About.jsx";
 import ContactUs from "./pages/Contact page/ContactUs.jsx";
@@ -20,28 +21,28 @@ import SingleBlog from "./pages/Blogs page/SingleBlog.jsx";
 
 const router = createBrowserRouter([
   {
-    element: <App />,
+    element: <RootLayout />,
     children: [
       {
         path: "/",
         element: <Homepage />,
       },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/contact-us",
-        element: <ContactUs />,
-      },
-      {
-        path: "/blogs",
-        element: <Blogs />,
-      },
-      {
-        path: "/blogs/single-blog",
-        element: <SingleBlog />,
-      },
+      // {
+      //   path: "/about",
+      //   element: <About />,
+      // },
+      // {
+      //   path: "/contact-us",
+      //   element: <ContactUs />,
+      // },
+      // {
+      //   path: "/blogs",
+      //   element: <Blogs />,
+      // },
+      // {
+      //   path: "/blogs/single-blog",
+      //   element: <SingleBlog />,
+      // },
     ],
   },
 ]);
