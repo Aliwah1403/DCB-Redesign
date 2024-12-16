@@ -27,10 +27,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Homepage />,
       },
-      // {
-      //   path: "/about",
-      //   element: <About />,
-      // },
+      {
+        path: "/about",
+        element: <About />,
+      },
       // {
       //   path: "/contact-us",
       //   element: <ContactUs />,
