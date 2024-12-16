@@ -9,25 +9,26 @@ import { Button } from "@/components/ui/button";
 const news = [
   {
     date: "May 23, 2024",
+    link: "articles/single-article",
     author: "Chris Otieno",
     authorProfile: chrisImage,
     title: "Time hospitals in Africa raised capital through stock market",
     bgPhoto: newsPhoto,
   },
-  {
-    date: "June 15, 2024",
-    author: "Denis Nyanja",
-    authorProfile: denisImage,
-    title: "The impact of fintech on African economies",
-    bgPhoto: news2,
-  },
-  {
-    date: "July 2, 2024",
-    author: "Denis Nyanja",
-    authorProfile: denisImage,
-    title: "Sustainable investing: The future of finance in Africa",
-    bgPhoto: news3,
-  },
+  // {
+  //   date: "June 15, 2024",
+  //   author: "Denis Nyanja",
+  //   authorProfile: denisImage,
+  //   title: "The impact of fintech on African economies",
+  //   bgPhoto: news2,
+  // },
+  // {
+  //   date: "July 2, 2024",
+  //   author: "Denis Nyanja",
+  //   authorProfile: denisImage,
+  //   title: "Sustainable investing: The future of finance in Africa",
+  //   bgPhoto: news3,
+  // },
 ];
 
 const RecentNews = () => {
@@ -77,7 +78,7 @@ const RecentNews = () => {
                 </h3>
               </div>
               <a
-                href="#"
+                href={item.link}
                 className="absolute inset-0"
                 aria-label={`Read more about ${item.title}`}
               >
@@ -86,10 +87,6 @@ const RecentNews = () => {
             </div>
           ))}
         </div>
-
-        {/* <div className="flex items-center justify-center mt-5">
-          <Button className="bg-[#005857] hover:bg-[#007F7C]">View More</Button>
-        </div> */}
       </div>
     </section>
   );
