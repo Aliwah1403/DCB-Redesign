@@ -83,28 +83,47 @@ const JourneyStats = () => {
           </div>
         </div>
 
-        {/* Timeline Section  */}
+        {/* Timeline Section */}
         <div className="mt-16">
-          <div className="grid grid-cols-4 gap-8">
-            <div className="col-span-4 flex items-center">
-              {milestones.map((milestone, index) => (
-                <div key={index} className="flex-1 flex items-center">
-                  <span className="w-2 h-2 rounded-full bg-[#005857]"></span>
-                  <span className="text-[#005857] font-medium ml-2">
-                    {milestone.date}
-                  </span>
-                  {index < milestones.length - 1 && (
-                    <div className="flex-1 h-[1px] border-t border-solid border-gray-200 mx-4"></div>
-                  )}
-                </div>
-              ))}
-            </div>
+          {/* Mobile Timeline (< 768px) */}
+          <div className="md:hidden space-y-8">
             {milestones.map((milestone, index) => (
-              <div key={`content-${index}`} className="mt-4">
+              <div key={index} className="relative pl-6">
+                <span className="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-[#005857]"></span>
+                <span className="text-[#005857] font-medium block mb-2">
+                  {milestone.date}
+                </span>
                 <h3 className="text-xl font-bold mb-2">{milestone.title}</h3>
                 <p className="text-gray-600 text-sm">{milestone.description}</p>
               </div>
             ))}
+          </div>
+
+          {/* Desktop Timeline (≥ 768px) */}
+          <div className="hidden md:block">
+            <div className="grid grid-cols-4 gap-8">
+              <div className="col-span-4 flex items-center">
+                {milestones.map((milestone, index) => (
+                  <div key={index} className="flex-1 flex items-center">
+                    <span className="w-2 h-2 rounded-full bg-[#005857]"></span>
+                    <span className="text-[#005857] font-medium ml-2">
+                      {milestone.date}
+                    </span>
+                    {index < milestones.length - 1 && (
+                      <div className="flex-1 h-[1px] border-t border-solid border-gray-200 mx-4"></div>
+                    )}
+                  </div>
+                ))}
+              </div>
+              {milestones.map((milestone, index) => (
+                <div key={`content-${index}`} className="mt-4">
+                  <h3 className="text-xl font-bold mb-2">{milestone.title}</h3>
+                  <p className="text-gray-600 text-sm">
+                    {milestone.description}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

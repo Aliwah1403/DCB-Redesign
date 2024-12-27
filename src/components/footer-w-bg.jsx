@@ -17,17 +17,17 @@ const FooterWBg = () => {
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-gray-900">
+                <a href="/about" className="hover:text-gray-900">
                   About us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-900">
+                <a href="/#services" className="hover:text-gray-900">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-900">
+                <a href="/#team" className="hover:text-gray-900">
                   Team
                 </a>
               </li>
@@ -37,12 +37,17 @@ const FooterWBg = () => {
             <h3 className="font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-gray-900">
+                <a href="/contact-us" className="hover:text-gray-900">
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="/articles" className="hover:text-gray-900">
                   Articles
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-900">
+                <a href="/articles" className="hover:text-gray-900">
                   News and PR
                 </a>
               </li>
@@ -59,7 +64,7 @@ const FooterWBg = () => {
             &copy; 2024 DCB Consulting LLP. All rights reserved.
           </p>
           <div className="flex space-x-4 mt-4 sm:mt-0">
-            <a href="#" className="text-gray-400 hover:text-gray-500">
+            <a href="#" className="text-white">
               <span className="sr-only">LinkedIn</span>
               <Linkedin className="h-6 w-6" />
             </a>

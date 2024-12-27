@@ -18,6 +18,7 @@ import FooterDesign1 from "@/components/footer-design-1";
 import logo5 from "@/assets/logoipsum-330.svg";
 import { Menu, X, Building, Mail, Phone, Clock, MapPin } from "lucide-react";
 import FooterWBg from "@/components/footer-w-bg";
+import contactBg from "@/assets/contact-page-two.jpg";
 
 const ContactUs = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -344,10 +345,10 @@ const ContactUs = () => {
       <main className="flex-grow">
         {/* Hero Section with Photo Background */}
         <section
-          className="relative bg-cover bg-center py-28"
+          className="relative bg-cover bg-center py-40 md:py-52"
           style={{
-            backgroundImage:
-              'url("https://dcbconsulting.co.ke/assets/hero1.jpeg")',
+            backgroundImage: `url(${contactBg})`,
+            minHeight: "480px",
           }}
         >
           <div className="absolute inset-0 bg-black/60"></div>

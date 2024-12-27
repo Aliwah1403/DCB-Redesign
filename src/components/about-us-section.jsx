@@ -4,6 +4,7 @@ import icon from "@/assets/logo-icon.svg";
 import aboutImg from "@/assets/about-us-image.jpg";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   const sectionRef = useRef(null);
@@ -39,13 +40,17 @@ const AboutSection = () => {
               between local businesses and international financial practices.
             </p>
             <div className="flex space-x-4">
-              <Button className="bg-[#005857] hover:bg-[#007F7C]">
-                Learn More
-              </Button>
-              <Button variant="outline">
-                Contact Us
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
+              <Link to="/about">
+                <Button className="bg-[#005857] hover:bg-[#007F7C]">
+                  Learn More
+                </Button>
+              </Link>
+              <Link to="/contact-us">
+                <Button variant="outline">
+                  Contact Us
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </Link>
             </div>
           </motion.div>
 

@@ -22,12 +22,12 @@ const FooterDesign1 = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-900">
+                <a href="/#services" className="hover:text-gray-900">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-900">
+                <a href="/#team" className="hover:text-gray-900">
                   Team
                 </a>
               </li>
@@ -37,8 +37,19 @@ const FooterDesign1 = () => {
             <h3 className="font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
+                <a href="/contact-us" className="hover:text-gray-900">
+                  Contact
+                </a>
+              </li>
+
+              <li>
                 <a href="/articles" className="hover:text-gray-900">
                   Articles
+                </a>
+              </li>
+              <li>
+                <a href="/articles" className="hover:text-gray-900">
+                  News and PR
                 </a>
               </li>
 

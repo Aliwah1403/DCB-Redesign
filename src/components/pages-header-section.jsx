@@ -3,9 +3,10 @@ import React from "react";
 const PagesHeader = ({ image, title, description }) => {
   return (
     <section
-      className="relative bg-cover bg-center py-28"
+      className="relative bg-cover bg-center py-40 md:py-52"
       style={{
         backgroundImage: `url(${image})`,
+        minHeight: "480px",
       }}
     >
       <div className="absolute inset-0 bg-black/60"></div>
