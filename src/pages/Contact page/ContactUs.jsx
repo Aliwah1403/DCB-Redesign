@@ -18,6 +18,7 @@ import FooterDesign1 from "@/components/footer-design-1";
 import logo5 from "@/assets/logoipsum-330.svg";
 import { Menu, X, Building, Mail, Phone, Clock, MapPin } from "lucide-react";
 import FooterWBg from "@/components/footer-w-bg";
+import contactBg from "@/assets/contact-page-bg.jpg";
 
 const ContactUs = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

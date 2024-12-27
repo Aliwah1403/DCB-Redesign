@@ -3,7 +3,7 @@ import React from "react";
 const PagesHeader = ({ image, title, description }) => {
   return (
     <section
-      className="relative bg-cover bg-center py-28"
+      className="relative bg-cover bg-fixed bg-no-repeat bg-center py-28"
       style={{
         backgroundImage: `url(${image})`,
       }}
