@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -21,13 +22,15 @@ const HeroSection = () => {
             forward
           </p>
 
-          <Button
-            size="lg"
-            className="animate-fade-in-up animation-delay-400 bg-[#005857] hover:bg-[#005857]/90"
-          >
-            Learn More
-            <ChevronRight className="ml-2 h-4 w-4" />
-          </Button>
+          <Link to="/about">
+            <Button
+              size="lg"
+              className="animate-fade-in-up animation-delay-400 bg-[#005857] hover:bg-[#005857]/90"
+            >
+              Learn More
+              <ChevronRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
