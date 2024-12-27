@@ -1,8 +1,7 @@
 import React from "react";
 import { Separator } from "@/components/ui/separator";
 import statsImage from "@/assets/stats-bg.jpg";
-
-// Will add number flow animation to the stats figures
+import { NumberTicker } from "./NumberTicker";
 
 const StatsSection = () => {
   return (
@@ -34,19 +33,30 @@ const StatsSection = () => {
 
               <div className="grid sm:grid-cols-2 gap-8">
                 <div className=" flex flex-col gap-3 border-l border-gray-900/10 pl-6">
-                  <p className="text-4xl font-medium text-[#005857]">35+</p>
+                  <p className="text-4xl font-medium text-[#005857]">
+                    <NumberTicker value={35} className="text-[#005857]" />+
+                  </p>
                   <p className="text-gray-600">Years of experience</p>
                 </div>
                 <div className=" flex flex-col gap-3 border-l border-gray-900/10 pl-6">
-                  <p className="text-4xl font-medium text-[#005857]">50+</p>
+                  <p className="text-4xl font-medium text-[#005857]">
+                    {" "}
+                    <NumberTicker value={50} className="text-[#005857]" />+
+                  </p>
                   <p className="text-gray-600">Clients served</p>
                 </div>
                 <div className=" flex flex-col gap-3 border-l border-gray-900/10 pl-6">
-                  <p className="text-4xl font-medium text-[#005857]">98%</p>
+                  <p className="text-4xl font-medium text-[#005857]">
+                    {" "}
+                    <NumberTicker value={98} className="text-[#005857]" />%
+                  </p>
                   <p className="text-gray-600">Client satisfaction</p>
                 </div>
                 <div className=" flex flex-col gap-3 border-l border-gray-900/10 pl-6">
-                  <p className="text-4xl font-medium text-[#005857]">$100M+</p>
+                  <p className="text-4xl font-medium text-[#005857]">
+                    $ <NumberTicker value={100} className="text-[#005857]" />
+                    M+
+                  </p>
                   <p className="text-gray-600">Capital raised</p>
                 </div>
               </div>
