@@ -19,6 +19,7 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
+        quicksand: ["Quicksand", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -86,7 +87,8 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "loop-scroll": "loop-scroll 20s linear infinite",
-        "fade-up": "fade-up 1000ms var(--animation-delay, 0ms) ease forwards",      },
+        "fade-up": "fade-up 1000ms var(--animation-delay, 0ms) ease forwards",
+      },
       backgroundColor: {
         "nav-trigger": "transparent",
         "nav-trigger-hover": "rgba(255, 255, 255, 0.1)",
