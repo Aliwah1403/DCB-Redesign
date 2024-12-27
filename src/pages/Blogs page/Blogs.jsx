@@ -2,6 +2,7 @@ import newsPhoto from "@/assets/blog1.jpg";
 import chrisImage from "@/assets/Chris.jpg";
 import PagesHeader from "@/components/pages-header-section";
 import CallToAction from "@/components/call-to-action";
+import articleBg from "@/assets/articles-bg.jpg";
 
 const posts = [
   {
@@ -29,7 +30,7 @@ const Blogs = () => {
       {/* Hero Section with Photo Background */}
       <PagesHeader
         title="What's New At DCB LLP"
-        image="https://dcbconsulting.co.ke/assets/hero1.jpeg"
+        image={articleBg}
         description="Browse the lates news and media mentions at DCB Consulting"
       />
 
