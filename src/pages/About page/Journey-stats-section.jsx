@@ -1,3 +1,4 @@
+import { NumberTicker } from "@/components/NumberTicker";
 import React from "react";
 
 const milestones = [
@@ -29,23 +30,28 @@ const milestones = [
 
 const stats = [
   {
-    number: "35+",
+    number: 35,
+    suffix: "+",
     label: "Years of Experience",
     description:
       "Combined expertise in financial consulting and business advisory.",
   },
   {
-    number: "50+",
+    number: 50,
+    suffix: "+",
     label: "Clients Served",
     description: "Trusted by businesses across diverse industries.",
   },
   {
-    number: "98%",
+    number: 98,
+    suffix: "%",
     label: "Customer Satisfaction",
     description: "Consistently exceeding client expectations.",
   },
   {
-    number: "$100M+",
+    number: 100,
+    prefix: "$",
+    suffix: "M+",
     label: "Capital Raised",
     description: "Successfully secured funding for our clients.",
   },
@@ -75,7 +81,13 @@ const JourneyStats = () => {
           <div className="grid sm:grid-cols-2 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-5xl font-medium  mb-10">{stat.number}</div>
+                <div className="text-5xl font-medium mb-10">
+                  {stat.prefix && <span>{stat.prefix}</span>}
+                  <NumberTicker
+                    value={stat.number}
+                  />
+                  {stat.suffix && <span>{stat.suffix}</span>}
+                </div>
                 <h3 className="text-xl font-semibold mb-2">{stat.label}</h3>
                 <p className="text-gray-600">{stat.description}</p>
               </div>
