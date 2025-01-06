@@ -19,6 +19,7 @@ import logo5 from "@/assets/logoipsum-330.svg";
 import { Menu, X, Building, Mail, Phone, Clock, MapPin } from "lucide-react";
 import FooterWBg from "@/components/footer-w-bg";
 import contactBg from "@/assets/contact-page-two.jpg";
+import PhoneNumberInput from "./phone-number-input";
 
 const ContactUs = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -231,25 +232,7 @@ const ContactUs = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="phone">Phone number</Label>
-                  <div className="flex">
-                    <Select>
-                      <SelectTrigger className="w-[80px]">
-                        <SelectValue placeholder="KE" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="ke">KE</SelectItem>
-                        <SelectItem value="ug">UG</SelectItem>
-                        <SelectItem value="tz">TZ</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <Input
-                      id="phone"
-                      type="tel"
-                      placeholder="+254 700 000 000"
-                      className="flex-1 ml-2"
-                    />
-                  </div>
+                  <PhoneNumberInput />
                 </div>
 
                 <div className="space-y-2">
