@@ -111,10 +111,10 @@ const SingleBlog = () => {
             <Badge className="mb-4 bg-white/10 text-white hover:bg-white/20">
               {blogPost.category}
             </Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-up [--animation-delay:200ms]">
               {blogPost.title}
             </h1>
-            <div className="flex items-center justify-center gap-4 text-white">
+            <div className="flex items-center justify-center gap-4 text-white animate-fade-up [--animation-delay:400ms]">
               <img
                 src={blogPost.author.image}
                 alt={blogPost.author.name}
