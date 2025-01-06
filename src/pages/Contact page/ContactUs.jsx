@@ -20,6 +20,7 @@ import { Menu, X, Building, Mail, Phone, Clock, MapPin } from "lucide-react";
 import FooterWBg from "@/components/footer-w-bg";
 import contactBg from "@/assets/contact-page-two.jpg";
 import PhoneNumberInput from "./phone-number-input";
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,8 +71,6 @@ const ContactUs = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <header
-        // className={`fixed top-0 left-0 right-0 z-50 transition-all bg-[#005857] duration-300 `}
-
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrollPosition > 50 ? "bg-white shadow-md" : "bg-transparent"
         }`}
@@ -86,15 +85,16 @@ const ContactUs = () => {
 
             <DesktopNavigation isScrolled={isScrolled} />
 
-            <Button
-              variant="ghost"
-              className={`${scrollPosition > 50 ? "text-black" : "text-white"}`}
-            >
-              Get in touch
-            </Button>
-            {/* <Button className="bg-[#009793] hover:bg-[#009793]/90">
-              Get in touch
-            </Button> */}
+            <Link to="/contact-us">
+              <Button
+                variant="ghost"
+                className={`${
+                  scrollPosition > 50 ? "text-black" : "text-white"
+                } hidden md:block`}
+              >
+                Get in touch
+              </Button>
+            </Link>
 
             <div className="md:hidden">
               <Button
@@ -103,9 +103,13 @@ const ContactUs = () => {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
                 {isMenuOpen ? (
-                  <X className="size-6" />
+                  <X className="size-7 stroke-[1.5]" />
                 ) : (
-                  <Menu className="size-8" />
+                  <Menu
+                    className={`${
+                      scrollPosition > 50 ? "stroke-black" : "stroke-white"
+                    } size-8 stroke-[1.5]`}
+                  />
                 )}
               </Button>
             </div>
@@ -118,7 +122,7 @@ const ContactUs = () => {
         <div className="md:hidden fixed inset-0 z-40 bg-white">
           <div className="pt-20 pb-3 px-2 space-y-1">
             <a
-              href="#"
+              href="/about"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
             >
               About
@@ -136,16 +140,18 @@ const ContactUs = () => {
               Team
             </a>
             <a
-              href="#"
+              href="/articles"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
             >
               Articles
             </a>
 
             <div className="px-3 py-2">
-              <Button className="w-full bg-[#005857] hover:bg-[#005857]/90">
-                Get in Touch
-              </Button>
+              <Link to="/contact-us">
+                <Button className="w-full bg-[#005857] hover:bg-[#005857]/90">
+                  Get in Touch
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
