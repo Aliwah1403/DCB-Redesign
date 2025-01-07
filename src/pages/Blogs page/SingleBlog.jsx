@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import PageTitle from "@/page-title";
 
 import {
   Menu,
@@ -98,6 +99,9 @@ Benefits to the investors in healthcare stocks include steady returns- healthcar
 const SingleBlog = () => {
   return (
     <>
+      {/* page title */}
+      <PageTitle title={`${blogPost.title} - DCB Consulting LLP`} />
+
       {/* Hero Section with Photo Background */}
       <section
         className="relative bg-cover bg-center py-32"
