@@ -18,6 +18,7 @@ import About from "./pages/About page/About.jsx";
 import ContactUs from "./pages/Contact page/ContactUs.jsx";
 import Blogs from "./pages/Blogs page/Blogs.jsx";
 import SingleBlog from "./pages/Blogs page/SingleBlog.jsx";
+import PageTitle from "./page-title.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,16 +26,31 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Homepage />,
+        element: (
+          <>
+            <PageTitle title="Home - DCB Consulting LLP" />
+            <Homepage />
+          </>
+        ),
       },
       {
         path: "/about",
-        element: <About />,
+        element: (
+          <>
+            <PageTitle title="About Us - DCB Consulting LLP" />
+            <About />
+          </>
+        ),
       },
 
       {
         path: "/articles",
-        element: <Blogs />,
+        element: (
+          <>
+            <PageTitle title="News & Articles - DCB Consulting LLP" />
+            <Blogs />
+          </>
+        ),
       },
       {
         path: "/articles/single-article",
@@ -44,7 +60,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact-us",
-    element: <ContactUs />,
+    element: (
+      <>
+        <PageTitle title="Get In Touch - DCB Consulting LLP" />
+        <ContactUs />
+      </>
+    ),
   },
 ]);
 
