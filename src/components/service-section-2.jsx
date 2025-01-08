@@ -125,157 +125,85 @@ export function ServicesDemo() {
       </section>
 
       {/* CFO Service Section */}
-      <section className="relative bg-gray-50 py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-r from-[#005857] to-[#007c7a] py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <div className="space-y-8">
-              <div>
-                <p className="text-sm font-semibold text-[#005857]">
-                  For Professionals
-                </p>
-                <h2 className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
-                  Better Team.
-                  <br />
-                  <span className="text-gray-500">less meetings.</span>
-                </h2>
-              </div>
-              <p className="text-lg text-gray-600 max-w-lg">
-                Experience dedicated CFO services that streamline your financial
-                operations. Our expert team helps you focus on growth while we
-                handle the strategic financial planning and execution.
+          <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+            <div className="mb-8 lg:mb-0">
+              <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+                ScaleCFO: Your Dedicated Financial Leadership
+              </h2>
+              <p className="mt-4 text-lg text-gray-100">
+                Experience top-tier CFO services tailored for growing
+                businesses. ScaleCFO, our specialized division, offers strategic
+                financial guidance to elevate your company's financial
+                performance.
               </p>
-              <div className="space-y-4">
-                {cfoFeatures.map((feature, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center space-x-3 text-gray-600"
-                  >
-                    <div className="flex-shrink-0 text-[#005857]">
-                      {feature.icon}
-                    </div>
-                    <span>{feature.text}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="pt-4">
-                <Button asChild className="bg-[#005857] hover:bg-[#005857]/90">
-                  <Link href="/scale-cfo">
-                    Learn more about ScaleCFO
+              <div className="mt-8">
+                <Button asChild size="lg" variant="secondary">
+                  <Link href="https://scalecfo.example.com">
+                    Explore ScaleCFO
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
               </div>
             </div>
-
-            {/* Client success story carousel */}
-            <div className="relative lg:mt-8">
-              <div className="relative h-[450px] bg-white rounded-lg shadow-lg overflow-hidden p-8">
-                <div className="h-full flex flex-col justify-between">
-                  <div className="space-y-6">
-                    <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 rounded-full bg-gray-200" />
-                      <div>
-                        <h4 className="font-semibold">Sarah Johnson</h4>
-                        <p className="text-sm text-gray-600">
-                          CEO, Tech Innovations
-                        </p>
-                      </div>
-                    </div>
-                    <blockquote className="text-lg text-gray-700 italic">
-                      "ScaleCFO transformed our financial operations. We've seen
-                      a 40% increase in operational efficiency and better
-                      strategic planning."
-                    </blockquote>
-                    <div className="flex space-x-2">
-                      {[...Array(5)].map((_, i) => (
-                        <svg
-                          key={i}
-                          className="w-5 h-5 text-yellow-400"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="flex justify-center space-x-2">
-                    {[...Array(3)].map((_, i) => (
-                      <button
-                        key={i}
-                        className={`w-2 h-2 rounded-full ${
-                          i === 0 ? "bg-[#005857]" : "bg-gray-300"
-                        }`}
+            <div className="lg:relative lg:h-full">
+              <div className="bg-white rounded-lg shadow-xl p-6 lg:absolute lg:right-0 lg:top-1/2 lg:transform lg:-translate-y-1/2 lg:w-5/6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Why Choose ScaleCFO?
+                </h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <svg
+                      className="h-6 w-6 text-green-500 mr-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
                       />
-                    ))}
-                  </div>
-                </div>
+                    </svg>
+                    <span>Expert financial strategy and planning</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="h-6 w-6 text-green-500 mr-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span>Tailored solutions for growing businesses</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="h-6 w-6 text-green-500 mr-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span>Seamless integration with your team</span>
+                  </li>
+                </ul>
               </div>
             </div>
-
-            {/* Service process timeline */}
-            {/* <div className="relative lg:mt-8">
-              <div className="relative h-[450px] bg-white rounded-lg shadow-lg overflow-hidden p-8">
-                <div className="space-y-8">
-                  {[
-                    {
-                      step: "1",
-                      title: "Initial Assessment",
-                      desc: "Comprehensive review of your financial operations",
-                    },
-                    {
-                      step: "2",
-                      title: "Strategy Development",
-                      desc: "Customized financial roadmap creation",
-                    },
-                    {
-                      step: "3",
-                      title: "Implementation",
-                      desc: "Seamless integration of CFO services",
-                    },
-                    {
-                      step: "4",
-                      title: "Ongoing Support",
-                      desc: "Continuous optimization and guidance",
-                    },
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-start space-x-4">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#005857] text-white flex items-center justify-center">
-                        {item.step}
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-900">
-                          {item.title}
-                        </h4>
-                        <p className="text-sm text-gray-600">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div> */}
-
-            {/* scaleCFO Logo/Icon */}
-            {/* <div className="relative lg:mt-8">
-              <div className="relative h-[450px] bg-white rounded-lg shadow-lg overflow-hidden">
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <svg
-                    viewBox="0 0 100 100"
-                    className="w-32 h-32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="100" height="100" rx="8" fill="#005857" />
-                    <path
-                      d="M30 30H70V70H30V30Z"
-                      fill="white"
-                      stroke="#005857"
-                      strokeWidth="4"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
