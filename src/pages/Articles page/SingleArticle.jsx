@@ -1,3 +1,5 @@
+import { useParams } from "react-router-dom";
+
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import PageTitle from "@/page-title";
@@ -26,6 +28,8 @@ import news2 from "@/assets/blog2.jpg";
 import news3 from "@/assets/blog3.jpg";
 import { format } from "date-fns";
 import CallToAction from "@/components/call-to-action";
+import { slugify } from "@/lib/utils";
+import NotFound from "@/not-found";
 
 const news = [
   {
@@ -33,6 +37,7 @@ const news = [
     author: "Chris Otieno",
     authorProfile: chrisImage,
     title: "Time hospitals in Africa raised capital through stock market",
+    slug: "time-hospitals-in-africa-raised-capital-through-stock-market",
     bgPhoto: newsPhoto,
   },
   {
@@ -40,6 +45,7 @@ const news = [
     author: "Denis Nyanja",
     authorProfile: denisImage,
     title: "The impact of fintech on African economies",
+    slug: "the-impact-of-fintech-on-african-economies",
     bgPhoto: news2,
   },
   {
@@ -47,6 +53,7 @@ const news = [
     author: "Denis Nyanja",
     authorProfile: denisImage,
     title: "Sustainable investing: The future of finance in Africa",
+    slug: "sustainable-investing-the-future-of-finance-in-africa",
     bgPhoto: news3,
   },
 ];
@@ -96,7 +103,13 @@ Benefits to the investors in healthcare stocks include steady returns- healthcar
     `,
 };
 
-const SingleBlog = () => {
+const SingleArticle = () => {
+  const { title: slugParam } = useParams();
+  const article = news.find((item) => item.slug === slugParam);
+
+  if (!article) {
+    return <NotFound />;
+  }
   return (
     <>
       {/* page title */}
@@ -246,4 +259,4 @@ const SingleBlog = () => {
   );
 };
 
-export default SingleBlog;
+export default SingleArticle;

@@ -16,8 +16,8 @@ import RootLayout from "./layouts/RootLayout.jsx";
 import Homepage from "./pages/Homepage/Homepage.jsx";
 import About from "./pages/About page/About.jsx";
 import ContactUs from "./pages/Contact page/ContactUs.jsx";
-import Blogs from "./pages/Blogs page/Blogs.jsx";
-import SingleBlog from "./pages/Blogs page/SingleBlog.jsx";
+import Articles from "./pages/Articles page/Articles.jsx";
+import SingleArticle from "./pages/Articles page/SingleArticle.jsx";
 import PageTitle from "./page-title.jsx";
 import NotFound from "./not-found.jsx";
 
@@ -49,13 +49,13 @@ const router = createBrowserRouter([
         element: (
           <>
             <PageTitle title="News & Articles - DCB Consulting LLP" />
-            <Blogs />
+            <Articles />
           </>
         ),
       },
       {
-        path: "/articles/single-article",
-        element: <SingleBlog />,
+        path: "/articles/:title",
+        element: <SingleArticle />,
       },
     ],
   },

@@ -3,17 +3,18 @@ import chrisImage from "@/assets/Chris.jpg";
 import PagesHeader from "@/components/pages-header-section";
 import CallToAction from "@/components/call-to-action";
 import articleBg from "@/assets/articles-bg.jpg";
+import { Link } from "react-router-dom";
+import { slugify } from "@/lib/utils";
 
 const posts = [
   {
     id: 1,
     imageUrl: newsPhoto,
     title: "Time hospitals in Africa raised capital through stock market",
-    href: "/articles/single-article",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel.",
     date: "May 23, 2024",
-    datetime: "2024-03-16",
+    datetime: "2024-05-23",
     category: { title: "Business", href: "#" },
     author: {
       name: "Chris Otieno",
@@ -24,7 +25,7 @@ const posts = [
   },
 ];
 
-const Blogs = () => {
+const Articles = () => {
   return (
     <>
       {/* Hero Section with Photo Background */}
@@ -44,13 +45,13 @@ const Blogs = () => {
                 className="flex max-w-xl flex-col items-start justify-between"
               >
                 <div className="w-full aspect-[16/9] mb-4 overflow-hidden rounded-lg ">
-                  <a href={post.href}>
+                  <Link to={`/articles/${slugify(post.title)}`}>
                     <img
                       src={post.imageUrl}
                       alt={post.title}
                       className="w-full h-full object-cover"
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className="flex items-center gap-x-4 text-xs">
                   <time dateTime={post.datetime} className="text-gray-500">
@@ -102,4 +103,4 @@ const Blogs = () => {
   );
 };
 
-export default Blogs;
+export default Articles;
