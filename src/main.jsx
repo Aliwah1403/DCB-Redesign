@@ -19,6 +19,7 @@ import ContactUs from "./pages/Contact page/ContactUs.jsx";
 import Blogs from "./pages/Blogs page/Blogs.jsx";
 import SingleBlog from "./pages/Blogs page/SingleBlog.jsx";
 import PageTitle from "./page-title.jsx";
+import NotFound from "./not-found.jsx";
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,7 @@ const router = createBrowserRouter([
       },
     ],
   },
+
   {
     path: "/contact-us",
     element: (
@@ -66,6 +68,10 @@ const router = createBrowserRouter([
         <ContactUs />
       </>
     ),
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 
