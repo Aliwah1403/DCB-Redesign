@@ -15,20 +15,6 @@ const news = [
     title: "Time hospitals in Africa raised capital through stock market",
     bgPhoto: newsPhoto,
   },
-  // {
-  //   date: "June 15, 2024",
-  //   author: "Denis Nyanja",
-  //   authorProfile: denisImage,
-  //   title: "The impact of fintech on African economies",
-  //   bgPhoto: news2,
-  // },
-  // {
-  //   date: "July 2, 2024",
-  //   author: "Denis Nyanja",
-  //   authorProfile: denisImage,
-  //   title: "Sustainable investing: The future of finance in Africa",
-  //   bgPhoto: news3,
-  // },
 ];
 
 const RecentNews = () => {
