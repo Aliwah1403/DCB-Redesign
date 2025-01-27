@@ -2,8 +2,13 @@ import { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { Phone, Mail, Linkedin, X } from "lucide-react";
-import chrisImage from "@/assets/Chris.jpg";
-import denisImage from "@/assets/Denis.jpg";
+
+// Cloudinary imports
+import { Cloudinary } from "@cloudinary/url-gen";
+import { auto } from "@cloudinary/url-gen/actions/resize";
+import { AdvancedImage } from "@cloudinary/react";
+
+const cloudinary = new Cloudinary({ cloud: { cloudName: "dzycxaapd" } });
 
 const teamMembers = [
   {
@@ -15,7 +20,7 @@ const teamMembers = [
           Chris is a founding and the managing partner at DCB consulting. He
           brings together 11 years of professional experience in the health
           sector. He was an integral part of the establishment and growth of
-          Karen hospital branches and strengthening of the hospital’s corporate
+          Karen hospital branches and strengthening of the hospital's corporate
           finance functions which saw him awarded Top 40 under 40 award in 2015.
           Chris has also helped several hospitals build their strategic plans
           and scale. <br />
@@ -26,7 +31,7 @@ const teamMembers = [
         </p>
       );
     },
-    imageSrc: chrisImage,
+    imageId: "Chris_msnqah",
     phone: "+254712345678",
     linkedin: "https://www.linkedin.com/",
     email: "chris.otieno@example.com",
@@ -49,7 +54,7 @@ const teamMembers = [
         </p>
       );
     },
-    imageSrc: denisImage,
+    imageId: "Denis_ud8gc3",
     phone: "+254712345678",
     linkedin: "https://www.linkedin.com/",
     email: "denis.nyanja@example.com",
@@ -93,6 +98,14 @@ const TeamSection = () => {
   const [active, setActive] = useState(null);
   const id = useId();
   const ref = useRef(null);
+
+  const getOptimizedImage = (imageId) => {
+    return cloudinary
+      .image(imageId)
+      .format("auto")
+      .quality("auto")
+      .resize(auto());
+  };
 
   useEffect(() => {
     function onKeyDown(event) {
@@ -145,11 +158,13 @@ const TeamSection = () => {
               ref={ref}
               className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white sm:rounded-3xl overflow-hidden shadow-xl"
             >
-              <motion.div layoutId={`image-${active.name}-${id}`}>
-                <img
-                  src={active.imageSrc}
-                  alt={active.name}
-                  className="w-full h-80 object-cover object-top"
+              <motion.div
+                layoutId={`image-${active.name}-${id}`}
+                className="w-full h-80"
+              >
+                <AdvancedImage
+                  cldImg={getOptimizedImage(active.imageId)}
+                  className="w-full h-full object-cover object-top"
                 />
               </motion.div>
               <div className="p-6">
@@ -242,9 +257,8 @@ const TeamSection = () => {
                   layoutId={`image-${member.name}-${id}`}
                   className="w-full aspect-[4/3] mb-6 overflow-hidden rounded-lg"
                 >
-                  <img
-                    src={member.imageSrc}
-                    alt={member.name}
+                  <AdvancedImage
+                    cldImg={getOptimizedImage(member.imageId)}
                     className="w-full h-full object-cover object-top"
                   />
                 </motion.div>
