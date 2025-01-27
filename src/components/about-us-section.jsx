@@ -6,7 +6,22 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 
+// Cloudinary
+import { Cloudinary } from "@cloudinary/url-gen";
+import { auto } from "@cloudinary/url-gen/actions/resize";
+import { AdvancedImage } from "@cloudinary/react";
+import { autoGravity } from "@cloudinary/url-gen/qualifiers/gravity";
+
+const cloudinary = new Cloudinary({ cloud: { cloudName: "dzycxaapd" } });
+
 const AboutSection = () => {
+  // image optimization
+  const img = cloudinary
+    .image("about-us-image_ieeoj3")
+    .format("auto")
+    .quality("auto");
+  // .resize(auto().gravity(autoGravity()).width(456).height(456));
+
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
 
@@ -61,11 +76,13 @@ const AboutSection = () => {
             transition={{ duration: 1 }}
             className="aspect-w-4 aspect-h-3"
           >
-            <img
+            {/* <img
               src={aboutImg}
               alt="About DCB LLP"
               className="w-full h-full object-cover rounded-lg"
-            />
+            /> */}
+
+            <AdvancedImage cldImg={img} />
           </motion.div>
         </div>
       </div>
