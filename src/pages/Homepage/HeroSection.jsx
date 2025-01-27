@@ -3,12 +3,29 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
+// Cloudinary
+import { Cloudinary } from "@cloudinary/url-gen";
+import { format, quality } from "@cloudinary/url-gen/actions/delivery";
+import { auto } from "@cloudinary/url-gen/actions/resize";
+import { AdvancedImage } from "@cloudinary/react";
+import { autoGravity } from "@cloudinary/url-gen/qualifiers/gravity";
+
+const cloudinary = new Cloudinary({ cloud: { cloudName: "dzycxaapd" } });
+
 const HeroSection = () => {
+  // image optimization
+  const backgroundImage = cloudinary
+    .image("hero1_ec3vwv")
+    .format("auto")
+    .quality("auto")
+    .resize(auto())
+    .toURL();
+
   return (
     <section
       className="relative bg-cover bg-center min-h-screen flex items-center"
       style={{
-        backgroundImage: "url(https://dcbconsulting.co.ke/assets/hero1.jpeg)",
+        backgroundImage: `url(${backgroundImage})`,
       }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
