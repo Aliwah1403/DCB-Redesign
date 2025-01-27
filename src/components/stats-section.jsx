@@ -3,16 +3,35 @@ import { Separator } from "@/components/ui/separator";
 import statsImage from "@/assets/stats-bg.jpg";
 import { NumberTicker } from "./NumberTicker";
 
+// Cloudinary
+import { Cloudinary } from "@cloudinary/url-gen";
+import { auto } from "@cloudinary/url-gen/actions/resize";
+import { AdvancedImage } from "@cloudinary/react";
+import { autoGravity } from "@cloudinary/url-gen/qualifiers/gravity";
+
+const cloudinary = new Cloudinary({ cloud: { cloudName: "dzycxaapd" } });
+
 const StatsSection = () => {
+  // image optimization
+  const img = cloudinary
+    .image("stats-bg_iqqhun")
+    .format("auto")
+    .quality("auto")
+    .resize(auto().width(658));
+
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           <div className="relative h-[500px]">
-            <img
+            {/* <img
               src={statsImage}
               alt="DCB Consulting Team"
               className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+            /> */}
+            <AdvancedImage
+              cldImg={img}
+              className="inset-0 w-full h-full object-cover rounded-2xl"
             />
             <div className="absolute inset-0 bg-black/20 rounded-2xl"></div>
           </div>
