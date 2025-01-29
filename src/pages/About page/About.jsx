@@ -4,7 +4,6 @@ import JourneyStats from "./Journey-stats-section";
 import ClientsSlider from "@/components/clients-slider";
 import CallToAction from "@/components/call-to-action";
 import PagesHeader from "@/components/pages-header-section";
-import aboutBg from "@/assets/about-page-bg.jpg";
 
 const About = () => {
   return (
@@ -12,7 +11,7 @@ const About = () => {
       {/* Hero Section with Photo Background */}
       <PagesHeader
         title="Your Financial Future"
-        image={aboutBg}
+        image={"about-page-bg_lgohut"}
         description="Guiding businesses towards financial clarity and strategic growth through expert consultancy and tailored solutions"
       />
 

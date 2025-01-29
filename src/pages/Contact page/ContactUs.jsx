@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { DesktopNavigation } from "@/components/DesktopNavigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -6,21 +6,18 @@ import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import FooterDesign1 from "@/components/footer-design-1";
 
 import logo5 from "@/assets/logoipsum-330.svg";
 import { Menu, X, Building, Mail, Phone, Clock, MapPin } from "lucide-react";
 import FooterWBg from "@/components/footer-w-bg";
-import contactBg from "@/assets/contact-page-two.jpg";
 import PhoneNumberInput from "./phone-number-input";
 import { Link } from "react-router-dom";
+
+// Cloudinary
+import { Cloudinary } from "@cloudinary/url-gen";
+import { auto } from "@cloudinary/url-gen/actions/resize";
+
+const cloudinary = new Cloudinary({ cloud: { cloudName: "dzycxaapd" } });
 
 const ContactUs = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -67,6 +64,14 @@ const ContactUs = () => {
       link: "#",
     },
   ];
+
+  // image optimization
+  const backgroundImage = cloudinary
+    .image("contact-page-two_zas04l")
+    .format("auto")
+    .quality("auto")
+    .resize(auto())
+    .toURL();
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -163,7 +168,7 @@ const ContactUs = () => {
         <section
           className="relative bg-cover bg-center py-40 md:py-52"
           style={{
-            backgroundImage: `url(${contactBg})`,
+            backgroundImage: `url(${backgroundImage})`,
             minHeight: "480px",
           }}
         >

@@ -1,7 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import icon from "@/assets/logo-icon.svg";
-import aboutImg from "@/assets/about-us-image.jpg";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
@@ -10,8 +9,6 @@ import { Link } from "react-router-dom";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { auto } from "@cloudinary/url-gen/actions/resize";
 import { AdvancedImage } from "@cloudinary/react";
-import { autoGravity } from "@cloudinary/url-gen/qualifiers/gravity";
-
 const cloudinary = new Cloudinary({ cloud: { cloudName: "dzycxaapd" } });
 
 const AboutSection = () => {
@@ -19,8 +16,8 @@ const AboutSection = () => {
   const img = cloudinary
     .image("about-us-image_ieeoj3")
     .format("auto")
-    .quality("auto");
-  // .resize(auto().gravity(autoGravity()).width(456).height(456));
+    .quality("auto")
+    .resize(auto());
 
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
