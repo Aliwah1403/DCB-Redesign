@@ -4,7 +4,6 @@ import JourneyStats from "./Journey-stats-section";
 import ClientsSlider from "@/components/clients-slider";
 import CallToAction from "@/components/call-to-action";
 import PagesHeader from "@/components/pages-header-section";
-import aboutBg from "@/assets/about-page-bg.jpg";
 
 const About = () => {
   return (

@@ -2,7 +2,6 @@ import newsPhoto from "@/assets/blog1.jpg";
 import chrisImage from "@/assets/Chris.jpg";
 import PagesHeader from "@/components/pages-header-section";
 import CallToAction from "@/components/call-to-action";
-import articleBg from "@/assets/articles-bg.jpg";
 import { Link } from "react-router-dom";
 import { slugify } from "@/lib/utils";
 

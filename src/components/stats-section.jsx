@@ -1,13 +1,9 @@
-import React from "react";
-import { Separator } from "@/components/ui/separator";
-import statsImage from "@/assets/stats-bg.jpg";
 import { NumberTicker } from "./NumberTicker";
 
 // Cloudinary
 import { Cloudinary } from "@cloudinary/url-gen";
 import { auto } from "@cloudinary/url-gen/actions/resize";
 import { AdvancedImage } from "@cloudinary/react";
-import { autoGravity } from "@cloudinary/url-gen/qualifiers/gravity";
 
 const cloudinary = new Cloudinary({ cloud: { cloudName: "dzycxaapd" } });
 
