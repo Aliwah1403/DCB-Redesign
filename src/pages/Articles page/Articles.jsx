@@ -31,7 +31,7 @@ const Articles = () => {
       {/* Hero Section with Photo Background */}
       <PagesHeader
         title="What's New At DCB LLP"
-        image={articleBg}
+        image={"articles-bg_edeajb"}
         description="Browse the lates news and media mentions at DCB Consulting"
       />
 

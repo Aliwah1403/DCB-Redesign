@@ -22,6 +22,15 @@ import contactBg from "@/assets/contact-page-two.jpg";
 import PhoneNumberInput from "./phone-number-input";
 import { Link } from "react-router-dom";
 
+// Cloudinary
+import { Cloudinary } from "@cloudinary/url-gen";
+import { format, quality } from "@cloudinary/url-gen/actions/delivery";
+import { auto } from "@cloudinary/url-gen/actions/resize";
+import { AdvancedImage } from "@cloudinary/react";
+import { autoGravity } from "@cloudinary/url-gen/qualifiers/gravity";
+
+const cloudinary = new Cloudinary({ cloud: { cloudName: "dzycxaapd" } });
+
 const ContactUs = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -67,6 +76,14 @@ const ContactUs = () => {
       link: "#",
     },
   ];
+
+  // image optimization
+  const backgroundImage = cloudinary
+    .image("contact-page-two_zas04l")
+    .format("auto")
+    .quality("auto")
+    .resize(auto())
+    .toURL();
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -163,7 +180,7 @@ const ContactUs = () => {
         <section
           className="relative bg-cover bg-center py-40 md:py-52"
           style={{
-            backgroundImage: `url(${contactBg})`,
+            backgroundImage: `url(${backgroundImage})`,
             minHeight: "480px",
           }}
         >

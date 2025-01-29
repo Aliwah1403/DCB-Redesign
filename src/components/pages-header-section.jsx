@@ -1,11 +1,28 @@
 import React from "react";
 
+// Cloudinary
+import { Cloudinary } from "@cloudinary/url-gen";
+import { format, quality } from "@cloudinary/url-gen/actions/delivery";
+import { auto } from "@cloudinary/url-gen/actions/resize";
+import { AdvancedImage } from "@cloudinary/react";
+import { autoGravity } from "@cloudinary/url-gen/qualifiers/gravity";
+
+const cloudinary = new Cloudinary({ cloud: { cloudName: "dzycxaapd" } });
+
 const PagesHeader = ({ image, title, description }) => {
+  // image optimization
+  const backgroundImage = cloudinary
+    .image(image)
+    .format("auto")
+    .quality("auto")
+    .resize(auto())
+    .toURL();
+
   return (
     <section
       className="relative bg-cover bg-center py-40 md:py-52"
       style={{
-        backgroundImage: `url(${image})`,
+        backgroundImage: `url(${backgroundImage})`,
         minHeight: "480px",
       }}
     >

@@ -12,7 +12,7 @@ const About = () => {
       {/* Hero Section with Photo Background */}
       <PagesHeader
         title="Your Financial Future"
-        image={aboutBg}
+        image={"about-page-bg_lgohut"}
         description="Guiding businesses towards financial clarity and strategic growth through expert consultancy and tailored solutions"
       />
 
