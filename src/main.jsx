@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         path: "/",
         element: (
           <>
-            <PageTitle title="Home - DCB Consulting LLP" />
+            <PageTitle title='Home - DCB Consulting LLP' />
             <Homepage />
           </>
         ),
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
         path: "/about",
         element: (
           <>
-            <PageTitle title="About Us - DCB Consulting LLP" />
+            <PageTitle title='About Us - DCB Consulting LLP' />
             <About />
           </>
         ),
@@ -48,13 +48,13 @@ const router = createBrowserRouter([
         path: "/articles",
         element: (
           <>
-            <PageTitle title="News & Articles - DCB Consulting LLP" />
+            <PageTitle title='News & Articles - DCB Consulting LLP' />
             <Articles />
           </>
         ),
       },
       {
-        path: "/articles/:title",
+        path: "/articles/:slug",
         element: <SingleArticle />,
       },
     ],
@@ -64,7 +64,7 @@ const router = createBrowserRouter([
     path: "/contact-us",
     element: (
       <>
-        <PageTitle title="Get In Touch - DCB Consulting LLP" />
+        <PageTitle title='Get In Touch - DCB Consulting LLP' />
         <ContactUs />
       </>
     ),
