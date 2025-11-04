@@ -68,7 +68,7 @@ const JourneyStats = () => {
               Our Journey: From Startup to Industry Powerhouse
             </h2>
             <p className="text-gray-600 text-lg mb-8">
-              At DCB Consulting, our mission is to empower businesses across
+              At Scale CFO, our mission is to empower businesses across
               East Africa with expert financial guidance and innovative
               solutions. We are committed to driving sustainable growth and
               operational excellence for our clients, leveraging our deep

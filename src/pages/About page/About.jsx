@@ -22,10 +22,10 @@ const About = () => {
       <TeamSection />
 
       {/* Clients section */}
-      <ClientsSlider />
+      {/* <ClientsSlider /> */}
 
       {/* Recent News */}
-      <RecentNews />
+      {/* <RecentNews /> */}
 
       {/* CTA Section 1*/}
       <CallToAction />

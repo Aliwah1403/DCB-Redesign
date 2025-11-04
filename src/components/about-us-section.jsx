@@ -38,13 +38,13 @@ const AboutSection = () => {
             transition={{ duration: 1 }}
           >
             <div className="mb-6">
-              <img src={icon} alt="DCB LLP Icon" className="w-12 h-12" />
+              <img src={icon} alt="Scale CFO Icon" className="w-12 h-12" />
             </div>
             <h2 className="text-4xl font-bold mb-6 text-[#005857]">
               Bridging Financial Excellence to Africa's Growth Companies
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              DCB LLP is a Kenyan corporate finance consulting firm with over 35
+              Scale CFO is a Kenyan corporate finance consulting firm with over 35
               years of combined expertise. We provide high quality, affordable
               financial solutions to early and growth companies in Africa,
               leveraging our industry knowledge and extensive networks. Our
@@ -75,7 +75,7 @@ const AboutSection = () => {
           >
             {/* <img
               src={aboutImg}
-              alt="About DCB LLP"
+              alt="About Scale CFO"
               className="w-full h-full object-cover rounded-lg"
             /> */}
 

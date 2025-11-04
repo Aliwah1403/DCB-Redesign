@@ -17,7 +17,7 @@ const teamMembers = [
     content: () => {
       return (
         <p>
-          Chris is a founding and the managing partner at DCB consulting. He
+          Chris is a founding and the managing partner at Scale CFO. He
           brings together 11 years of professional experience in the health
           sector. He was an integral part of the establishment and growth of
           Karen hospital branches and strengthening of the hospital's corporate

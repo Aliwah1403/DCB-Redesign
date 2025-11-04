@@ -14,6 +14,9 @@ const Homepage = () => {
       {/* Hero section */}
       <HeroSection />
 
+      {/* Clients section */}
+      <ClientsSlider />
+
       {/* About Us Section */}
       <AboutSection />
 
@@ -26,11 +29,8 @@ const Homepage = () => {
       {/* Team Section */}
       <TeamSection />
 
-      {/* Clients section */}
-      <ClientsSlider />
-
       {/* Recent News */}
-      <RecentNews />
+      {/* <RecentNews /> */}
 
       {/* CTA Section 1*/}
       <CallToAction />
