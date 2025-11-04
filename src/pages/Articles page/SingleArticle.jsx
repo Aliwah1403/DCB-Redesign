@@ -319,7 +319,7 @@ const SingleArticle = () => {
                     </h3>
                   </div>
                   <a
-                    href='#'
+                    href={`/articles/${relatedPost.slug}`}
                     className='absolute inset-0'
                     aria-label={`Read more about ${relatedPost.title}`}
                   >
