@@ -53,10 +53,10 @@ const RecentNews = () => {
             News
           </h3>
           <h2 className='text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight'>
-            What's New At DCB LLP
+            What's New At Scale CFO
           </h2>
           <p className='text-xl text-gray-600 max-w-3xl mx-auto'>
-            Browse the latest news and media mentions about DCB Consulting LLP.
+            Browse the latest news and media mentions about Scale CFO.
           </p>
         </div>
 

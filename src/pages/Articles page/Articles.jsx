@@ -95,9 +95,9 @@ const Articles = () => {
     <>
       {/* Hero Section with Photo Background */}
       <PagesHeader
-        title="What's New At DCB LLP"
+        title="What's New At Scale CFO"
         image={"articles-bg_edeajb"}
-        description='Browse the lates news and media mentions at DCB Consulting'
+        description='Browse the lates news and media mentions at Scale CFO'
       />
 
       <div className='bg-white py-12 sm:py-12'>

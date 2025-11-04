@@ -61,7 +61,7 @@ const FooterWBg = () => {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-sm">
-            &copy; 2024 DCB Consulting LLP. All rights reserved.
+            &copy; 2025 Scale CFO. All rights reserved.
           </p>
           <div className="flex space-x-4 mt-4 sm:mt-0">
             <a href="#" className="text-white">

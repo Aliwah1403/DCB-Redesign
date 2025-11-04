@@ -74,7 +74,7 @@ export function DesktopNavigation({ isScrolled }) {
                     href="/"
                   >
                     <img src={dummyIcon} className="size-6" />
-                    <div className="mb-2 mt-4 text-lg font-medium">DCB LLP</div>
+                    <div className="mb-2 mt-4 text-lg font-medium">Scale CFO</div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       Elevate your business potential with premium CFO services.
                     </p>
@@ -82,7 +82,7 @@ export function DesktopNavigation({ isScrolled }) {
                 </NavigationMenuLink>
               </li>
               <ListItem href="/about" title="About us">
-                DCB LLP: A Kenyan finance consultancy with 35+ years of
+                Scale CFO: A Kenyan finance consultancy with 35+ years of
                 expertise.
               </ListItem>
               <ListItem href="#services" title="Services">

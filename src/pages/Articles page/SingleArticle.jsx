@@ -179,7 +179,7 @@ const SingleArticle = () => {
   return (
     <>
       {/* page title */}
-      <PageTitle title={`${post.title} - DCB Consulting LLP`} />
+      <PageTitle title={`${post.title} - Scale CFO`} />
 
       {/* Hero Section with Photo Background */}
       <section

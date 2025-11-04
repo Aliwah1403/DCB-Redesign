@@ -22,7 +22,7 @@ const StatsSection = () => {
           <div className="relative h-[500px]">
             {/* <img
               src={statsImage}
-              alt="DCB Consulting Team"
+              alt="Scale CFO Team"
               className="absolute inset-0 w-full h-full object-cover rounded-2xl"
             /> */}
             <AdvancedImage
